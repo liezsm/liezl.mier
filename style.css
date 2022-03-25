@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  height: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo,
+nav {
+  margin: 0 1.5rem;
+}
+.logo {
+  /* border: 1px solid green; */
+  /* width: 100%; */
+  /* width: 30vw; */
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 1.2rem;
+}
+#logo {
+  display: block;
+  margin: auto;
+  height: 80%;
+  max-height: 100%;
+}
+nav h4 {
+  /* border: 1px solid red; */
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid green; */
+  margin: 1rem;
+  margin-top: 2rem;
+}
+.introduction {
+  /* border: 1px solid red; */
+  width: 100%;
+  line-height: 1.5rem;
+}
+.introduction strong {
+  /* border: 1px solid red; */
+  padding: 0 2rem;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.introduction .position {
+  color: gray;
+  margin-top: -5px;
+}
+.hero-img {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* height: 70%; */
+  /* height: 200px; */
+}
+.hero-img img {
+  /* border: 1px solid red; */
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-height: 100%;
+}
+
+.cta-wrapper {
+  /* border: 1px solid green; */
+  width: 100%;
+  padding-left: 1rem;
+}
+.cta-wrapper button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem;
+}
+/* -media queries */
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
