@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav>
+      <nav id="nav">
         <div class="nav-header">
           <div class="logo">
             <img
@@ -32,20 +32,32 @@
         <div class="links">
           <ul>
             <li>
-              <a href="#">About Me</a>
+              <a href="#home">
+                <i class="fas fa-home-alt"></i>
+                <small>home</small>
+              </a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a href="#about-me">
+                <i class="fas fa-user-alt"></i>
+                 <small>home</small>
+              </a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a href="#project">
+                <i class="fas fa-project-diagram">
+
+                </i>
+                 <small>home</small>
+              </a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a href="#">
+                <i class="fas fa-envelope-square"></i>
+                 <small>home</small>
+              </a>
             </li>
-            <li>
-              <a href="#">About Me</a>
-            </li>
+          
           </ul>
         </div>
       </nav>
@@ -71,7 +83,7 @@
           <div class="introduction-right"></div>
         </div>
 
-        <div class="introduction-mobile">
+        <div  id="home" class="introduction-mobile">
           <div class="message-item">
             <div class="message">
               <div class="message-text">
@@ -96,7 +108,7 @@
 
         <!-- -end of intro -->
 
-        <section class="about-me-section">
+        <section id="about-me" class="about-me-section">
           <div class="wrapper">
             <div class="profile">
               <div class="about-me-image">
@@ -139,7 +151,7 @@
               </div>
             </div>
           </div>
-
+          <!-- -skilss and educ -->
           <div class="wrapper">
             <div class="certifications">
               <div class="wrap">
@@ -223,16 +235,21 @@
           </div>
         </section>
 
-        <section class="project-area">
+        <!-- -projects section -->
+
+        <section  id="project" class="project-area">
           <h1>My Projects</h1>
+
           <div class="carousel" data-carousel>
+
             <button class="carousel-btn prev"
-            data-carousel-btn="prev"
-            >
-            &#8656</button>
+            data-carousel-btn="prev">
+            &#8656
+          </button>
+
             <button class="carousel-btn next"
-             data-carousel-btn="next"
-            >&#8658
+             data-carousel-btn="next">
+             &#8658
           </button>
 
             <ul class="carousel-slides" data-carousel-slides>
@@ -242,23 +259,87 @@
                   <div class="card">
                     <img src="./dist/images/projects/advice-generator.png" alt="">
                   </div>
-                  <p>Slide 1</p>
-                  <small
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nihil, aperiam.</small
-                  >
+                  <div class="project-description">
+
+                      <p class="project-title">Advice Generator App 
+                      </p>
+                      
+                     <div class="project_techUsed">
+                       <span class="tech_item">HTML</span>
+                       <span class="tech_item">CSS</span>
+                       <span class="tech_item">SASS</span>
+                       <span class="tech_item">JAVASCRIPT</span>
+                       <span class="tech_item">ASYNC/AWAIT</span>
+                       <span class="tech_item">API</span>
+                     </div>
+                     <div class="project-source">
+                        <div class="preview-site">
+                         <a href="https://liezsm.github.io/advice-generator-app/"
+                         target="blank"
+                         >
+                         Preview Site
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+                        <div class="preview-site">
+                         <a href="https://github.com/liezsm/advice-generator-app"
+                         target="blank"
+                         >View Code
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+
+                     </div>
+                    
+                    <p class="description-text">
+                   Get random advice using API
+                    </p>
+
+                  </div>
+                
                 </div>
               </li>
 
               <li class="carousel-slide">
+
                 <div class="slide-content">
                   <div class="card">
                     <img src="./dist/images/projects/booklist-app.png" alt="">
                   </div>
-                  <p>Slide 2</p>
-                  <small
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio quod recusandae? Ullam magnam consequatur nemo reiciendis maxime molestiae repellat, obcaecati illum incidunt quibusdam eligendi dolorem amet vitae illo laboriosam!</small
-                  >
+
+                 <div class="project-description">
+                      <p class="project-title">
+                        Booklist App
+                      </p>   
+                     <div class="project_techUsed">
+                       <span class="tech_item">REACT</span>
+                       <span class="tech_item">BOOTSTRAP</span>
+                      
+                     </div>
+                     <div class="project-source">
+                        <div class="preview-site">
+                         <a href="https://github.com/liezsm/react-exercise-book-app"
+                         target="blank"
+                         >
+                         Preview Site
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+                        <div class="preview-site">
+                         <a href="https://liezsm.github.io/react-exercise-book-app/#/react-exercise-book-app/"
+                         target="blank"
+                         >View Code
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+
+                     </div>
+                    
+                    <p class="description-text">
+                      I build this simple project that can create, edit, update and delete a book after finishing a begginer's course in React.
+                    </p>
+
+                  </div>
                 </div>
               </li>
 
@@ -266,11 +347,45 @@
                 <div class="slide-content">
                   <div class="card">
                     <img src="./dist/images/projects/calculator-app.png" alt="">
+                  </div>           
+                 <div class="project-description">
+                      <p class="project-title">
+                       Calculator App
+                      </p>
+                      
+                     <div class="project_techUsed">
+                       <span class="tech_item">HTML</span>
+                       <span class="tech_item">CSS</span>
+                       <span class="tech_item">SASS</span>
+                       <span class="tech_item">VANILLA JAVASCRIPT</span>
+                      
+                      
+                     </div>
+                     <div class="project-source">
+                        <div class="preview-site">
+                         <a href="https://liezsm.github.io/calculator-app-frontendmentor-challenge/"
+                         target="blank"
+                         >
+                         Preview Site
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+                        <div class="preview-site">
+                         <a href="https://github.com/liezsm/calculator-app-frontendmentor-challenge"
+                         target="blank" >
+                         View Code
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+
+                     </div>
+                    
+                    <p class="description-text">
+                      Calculator with theme-switcher
+                    </p>
+
                   </div>
-                  <p>Slide 2</p>
-                  <small
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio quod recusandae? Ullam magnam consequatur nemo reiciendis maxime molestiae repellat, obcaecati illum incidunt quibusdam eligendi dolorem amet vitae illo laboriosam!</small
-                  >
+
                 </div>
               </li>
               
@@ -279,10 +394,42 @@
                   <div class="card">
                     <img src="./dist/images/projects/sunny-side.png" alt="">
                   </div>
-                  <p>Slide 2</p>
-                  <small
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio quod recusandae? Ullam magnam consequatur nemo reiciendis maxime molestiae repellat, obcaecati illum incidunt quibusdam eligendi dolorem amet vitae illo laboriosam!</small
-                  >
+
+                   <div class="project-description">
+                      <p class="project-title">
+                      Sunnyside Landing Page
+                      </p>
+                      
+                     <div class="project_techUsed">
+                       <span class="tech_item">HTML</span>
+                       <span class="tech_item">CSS</span>
+                       <span class="tech_item">VANILLA JAVASCRIPT</span>
+                     </div>
+                     <div class="project-source">
+                        <div class="preview-site">
+                         <a href="https://liezsm.github.io/frontendmentor-sunnyside-landing-page/"
+                         target="blank"
+                         >
+                         Preview Site
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+                        <div class="preview-site">
+                         <a href="https://github.com/liezsm/frontendmentor-sunnyside-landing-page"
+                         target="blank" >
+                         View Code
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+
+                     </div>
+                    
+                    <p class="description-text">
+                      A landing page for a made-up company.
+                    </p>
+
+                  </div>
+               
                 </div>
               </li>
 
@@ -291,10 +438,43 @@
                   <div class="card">
                     <img src="./dist/images/projects/todo-app.png" alt="">
                   </div>
-                  <p>Slide 2</p>
-                  <small
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio quod recusandae? Ullam magnam consequatur nemo reiciendis maxime molestiae repellat, obcaecati illum incidunt quibusdam eligendi dolorem amet vitae illo laboriosam!</small
-                  >
+                 
+                   
+                   <div class="project-description">
+                      <p class="project-title">
+                      Todo App
+                      </p>
+                      
+                     <div class="project_techUsed">
+                       <span class="tech_item">REACT</span>
+                       <span class="tech_item">SASS</span>
+                       <span class="tech_item">REACT BEAUTIFUL-DND</span>
+                     </div>
+                     <div class="project-source">
+                        <div class="preview-site">
+                         <a href="https://liezsm.github.io/todo-app-frontendmentor/"
+                         target="blank"
+                         >
+                         Preview Site
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+                        <div class="preview-site">
+                         <a href="https://github.com/liezsm/todo-app-frontendmentor"
+                         target="blank" >
+                         View Code
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+
+                     </div>
+                    
+                    <p class="description-text">
+                      App for creating your to-do list and features suchs as rearranging the items by dragging the item and toggle for dark/light theme preferrence but automatically switch according to your device's theme preference already set.
+                    </p>
+
+                  </div>
+
                 </div>
               </li>
 
@@ -303,10 +483,42 @@
                   <div class="card">
                     <img src="./dist/images/projects/rps-game.png" alt="">
                   </div>
-                  <p>Slide 2</p>
-                  <small
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio quod recusandae? Ullam magnam consequatur nemo reiciendis maxime molestiae repellat, obcaecati illum incidunt quibusdam eligendi dolorem amet vitae illo laboriosam!</small
-                  >
+
+                     <div class="project-description">
+                      <p class="project-title">
+                     Rock Paper Scissors game
+                      </p>
+                      
+                     <div class="project_techUsed">
+                       <span class="tech_item">REACT</span>
+                       <span class="tech_item">SASS</span>
+                       <span class="tech_item">REACT BEAUTIFUL-DND</span>
+                     </div>
+                     <div class="project-source">
+                        <div class="preview-site">
+                         <a href="https://liezsm.github.io/todo-app-frontendmentor/"
+                         target="blank"
+                         >
+                         Preview Site
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+                        <div class="preview-site">
+                         <a href="https://github.com/liezsm/todo-app-frontendmentor"
+                         target="blank" >
+                         View Code
+                           <i class="fas fa-external-link"></i>
+                         </a>
+                         </div>
+
+                     </div>
+                    
+                    <p class="description-text">
+                      App for creating your to-do list and features suchs as rearranging the items by dragging the item and toggle for dark/light theme preferrence but automatically switch according to your device's theme preference already set.
+                    </p>
+
+                  </div>
+                
                 </div>
               </li>
 

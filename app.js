@@ -34,3 +34,5 @@ buttons.forEach((btn) => {
     slides.children[newIndex].dataset.active = true;
   });
 });
+
+// todo navbar scroll
