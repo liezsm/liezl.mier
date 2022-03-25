@@ -52,6 +52,9 @@ nav {
   }
 }
 
+#toggle:hover {
+  cursor: pointer;
+}
 .links {
   display: none;
 }
@@ -60,6 +63,11 @@ nav {
 
 .show-links {
   display: block;
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
 }
 .introduction-desktop {
   display: none;

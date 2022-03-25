@@ -53,12 +53,25 @@ nav {
   color: #d5cabd;
 }
 
+#toggle:hover {
+  cursor: pointer;
+}
+
 .links {
   display: none;
 }
 
 .show-links {
   display: block;
+}
+
+.show-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .introduction-desktop {
