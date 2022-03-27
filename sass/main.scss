@@ -52,6 +52,10 @@ a {
 
 #nav {
   background-color: $primary;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
   top: 0;
   z-index: 99;
