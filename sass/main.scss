@@ -28,10 +28,10 @@ $accent: #ab85aa;
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 200px;
-  @include desktop() {
-    scroll-padding-top: 60px;
-  }
+  // scroll-padding-top: 110px;
+  // @include desktop() {
+  //   scroll-padding-top: 60px;
+  // }
 }
 body {
   width: 100%;
@@ -52,12 +52,10 @@ a {
 
 #nav {
   background-color: $primary;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 99;
   @include desktop() {
     display: flex;
@@ -262,9 +260,11 @@ a {
 }
 
 .profile {
+  // width: min(calc(100% - 4rem), 400px);
+  width: 80vw;
+  max-width: 400px;
   color: $accent;
   margin-top: 5rem;
-  width: 400px;
   border-radius: 8px;
   background: linear-gradient(145deg, #614261, #744e74);
   box-shadow: 20px 20px 60px #5c3e5c, -20px -20px 60px #7c547c;

@@ -15,13 +15,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 110px;
-}
-
-@media (min-width: 768px) {
-  html {
-    scroll-padding-top: 60px;
-  }
 }
 
 body {
@@ -43,9 +36,10 @@ a {
 
 #nav {
   background-color: #321433;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 99;
 }
 
@@ -331,9 +325,10 @@ a {
 }
 
 .profile {
+  width: 80vw;
+  max-width: 400px;
   color: #ab85aa;
   margin-top: 5rem;
-  width: 400px;
   border-radius: 8px;
   background: linear-gradient(145deg, #614261, #744e74);
   -webkit-box-shadow: 20px 20px 60px #5c3e5c, -20px -20px 60px #7c547c;

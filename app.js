@@ -7,6 +7,28 @@ toggle.addEventListener("click", () => {
   link.classList.toggle("show-links");
 });
 
+// todo fixed navbar
+
+const links = document.querySelectorAll("[data-link]");
+const nav = document.getElementById("nav");
+
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    // exp get the href attribute of the link and remove the pound sign using slice method
+    const link = e.currentTarget.getAttribute("href").slice(1);
+    // exp get the element from the extracted href
+    const element = document.getElementById(link);
+
+    const topPosition = element.offsetTop - nav.getBoundingClientRect().height;
+
+    window.scrollTo({
+      left: 0,
+      top: topPosition,
+    });
+  });
+});
+
 // todo carousel for projects
 
 const buttons = document.querySelectorAll("[data-carousel-btn");
