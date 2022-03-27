@@ -28,7 +28,7 @@ $accent: #ab85aa;
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+  scroll-padding-top: 200px;
   @include desktop() {
     scroll-padding-top: 60px;
   }
