@@ -1,6 +1,6 @@
 // todo toggle button for menu bars
 const home = document.getElementById("home").offsetTop;
-console.log(home);
+
 const toggle = document.getElementById("toggle");
 
 toggle.addEventListener("click", () => {
