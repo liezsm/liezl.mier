@@ -1,5 +1,6 @@
 // todo toggle button for menu bars
-
+const home = document.getElementById("home").offsetTop;
+console.log(home);
 const toggle = document.getElementById("toggle");
 
 toggle.addEventListener("click", () => {
@@ -19,7 +20,8 @@ links.forEach((link) => {
     const link = e.currentTarget.getAttribute("href").slice(1);
     // exp get the element from the extracted href
     const element = document.getElementById(link);
-
+    console.log("navbarheight", nav.getBoundingClientRect().height);
+    console.log("element offsettop", element.offsetTop);
     const topPosition = element.offsetTop - nav.getBoundingClientRect().height;
 
     window.scrollTo({
