@@ -360,6 +360,7 @@ a {
   background-color: $accent;
   color: $primary;
   padding: 2rem;
+
   @include desktop() {
     padding: 4rem;
   }
@@ -375,8 +376,7 @@ a {
 
 .carousel {
   width: 100%;
-
-  min-height: 600px;
+  min-height: 700px;
   height: auto;
   margin: auto;
 
@@ -397,12 +397,11 @@ a {
   position: absolute;
   z-index: 2;
   font-size: 4rem;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   color: $primary;
   cursor: pointer;
-  // border-radius: 0.25rem;
-  background: none;
+  border-radius: 0.25rem;
   padding: 0 0.5rem;
 
   .carousel-btn:hover,
@@ -444,14 +443,10 @@ a {
 .slide-content {
   display: flex;
   flex-direction: column;
-  max-height: 100%;
 }
 
 .project-description {
-  min-height: 300px;
   height: auto;
-  padding: 2rem 2rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -460,6 +455,7 @@ a {
   @include desktop() {
     background: none;
     height: auto;
+    padding: 2rem 2rem;
   }
 
   > *:not(:first-child) {
@@ -467,6 +463,7 @@ a {
   }
 
   .project-title {
+    margin-top: 1rem;
     font-size: 1.4rem;
     font-weight: 900;
 

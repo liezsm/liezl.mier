@@ -460,7 +460,7 @@ a {
 
 .carousel {
   width: 100%;
-  min-height: 600px;
+  min-height: 700px;
   height: auto;
   margin: auto;
   position: relative;
@@ -484,12 +484,12 @@ a {
   position: absolute;
   z-index: 2;
   font-size: 4rem;
-  top: 50%;
+  top: 35%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #321433;
   cursor: pointer;
-  background: none;
+  border-radius: 0.25rem;
   padding: 0 0.5rem;
 }
 
@@ -539,13 +539,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 100%;
 }
 
 .project-description {
-  min-height: 300px;
   height: auto;
-  padding: 2rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,6 +562,7 @@ a {
   .project-description {
     background: none;
     height: auto;
+    padding: 2rem 2rem;
   }
 }
 
@@ -573,6 +571,7 @@ a {
 }
 
 .project-description .project-title {
+  margin-top: 1rem;
   font-size: 1.4rem;
   font-weight: 900;
 }
