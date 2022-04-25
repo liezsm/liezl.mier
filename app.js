@@ -62,6 +62,17 @@ buttons.forEach((btn) => {
 //  todo projects cards & carousel
 const projects = [
   {
+    name: "Argao's Best Delicacies Shop",
+    technology: ["react", "redux", "open-props", "sass"],
+    site: {
+      live: "https://liezsm.github.io/argao-delicacies-shop/#/argao-delicacies-shop/",
+      code: "https://github.com/liezsm/argao-delicacies-shop",
+    },
+    description:
+      "A simple e-commerce app that I have made proudly selling the best food in my town, Torta and Tableya. It can do the simple functionality of a ecommerce like adding to cart, compute the total, able to add or decrease items using React and Redux Toolkit for state management",
+    img: "./dist/images/projects/argao-shop.png",
+  },
+  {
     name: "Todo App",
     technology: ["react", "react-beautiful-dnd", "sass"],
     site: {
