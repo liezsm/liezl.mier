@@ -69,7 +69,7 @@ const projects = [
       code: "https://github.com/liezsm/argao-delicacies-shop",
     },
     description:
-      "A simple e-commerce app that I have made proudly selling the best food in my town, Torta and Tableya. It can do the simple functionality of a ecommerce like adding to cart, compute the total, able to add or decrease items using React and Redux Toolkit for state management",
+      "A simple e-commerce app that I have made proudly selling the best food in my town, Torta and Tableya. It can do the simple functionality of a ecommerce like adding to cart, compute the total, able to add or decrease items using React and Redux Toolkit for state management. I've also used a new css framework called Open-Props in the design.",
     img: "./dist/images/projects/argao-shop.png",
   },
   {
