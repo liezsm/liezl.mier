@@ -63,7 +63,7 @@ buttons.forEach((btn) => {
 const projects = [
   {
     name: "Argao's Best Delicacies Shop",
-    technology: ["react", "redux", "open-props", "sass"],
+    technology: ["react", "redux", "firebase", "open-props", "sass"],
     site: {
       live: "https://liezsm.github.io/argao-delicacies-shop/#/argao-delicacies-shop/",
       code: "https://github.com/liezsm/argao-delicacies-shop",
