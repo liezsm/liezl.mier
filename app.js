@@ -108,6 +108,17 @@ const projects = [
   },
 
   {
+    name: "React Movie App",
+    technology: ["react", "styled-components", "tmdb"],
+    site: {
+      live: "https://quiet-fenglisu-c369dc.netlify.app/",
+      code: "https://github.com/liezsm/movie-app",
+    },
+    description:
+      "Cloning a movie app. Coding along from freecodeCamp's free courses to enchance my ReactJS skill and using TheMovieDB API.",
+    img: "./dist/images/projects/movie-app.png",
+  },
+  {
     name: " Sunnyside Landing Page",
     technology: ["html", "css", "vanilla -javascript"],
     site: {
@@ -212,53 +223,6 @@ carouselSlides.innerHTML = slideItem;
 // todo set the first slide to active
 carouselSlides.children[0].setAttribute("data-active", "true");
 
-// todo add the project in each card for desktops screen sizes
-
-const projectWrap = document.querySelector("[data-project-card]");
-
-const projectsCard = projects
-  .map((p) => {
-    const { name, technology, site, description, img } = p;
-    const techItem = technology
-      .map((i) => `<span class="tech_item">${i}</span>`)
-      .join("");
-
-    return `
-        
-            <div class="project-item">
-              <div class="project-item-image">
-                <img src="${img}" alt="">
-              </div>
-
-              <div class='project-description'>
-  <p class='project-title'>${name}</p>
-
-  <div class='project_techUsed'>${techItem}</div>
-  <div class='project-source'>
-    <div class='preview-site'>
-      <a href='${site.live}' target='blank'>
-        Preview Site
-        <i class='fas fa-external-link'></i>
-      </a>
-    </div>
-    <div class='preview-site'>
-      <a href='${site.code}' target='blank'>
-        View Code
-        <i class='fas fa-external-link'></i>
-      </a>
-    </div>
-  </div>
-
-  <p class='description-text'>${description}</p>
-</div>
-             
-            </div>
-      `;
-  })
-  .join("");
-
-projectWrap.innerHTML = projectsCard;
-
 // todo github button to show up
 const githubBtn = document.querySelector(".github-btn");
 
@@ -272,6 +236,7 @@ window.addEventListener("scroll", () => {
   // todo add the arrowup if we scroll more than the desired px we want
 
   if (scrolledHeight > 500) {
+    console.log(scrolledHeight);
     githubBtn.classList.add("show-github-btn");
   } else {
     githubBtn.classList.remove("show-github-btn");
