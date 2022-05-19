@@ -94,6 +94,70 @@ a {
   }
 }
 
+// -menu btn
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  top: 1.5rem;
+  right: 1.5rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+
+  // -bars line
+
+  &_burger {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: $accent;
+    transition: all 500ms ease-in;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.5rem;
+
+      width: 28px;
+      height: 3px;
+      background-color: $accent;
+      transition: all 500ms ease-in;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0.5rem;
+      width: 20px;
+      height: 3px;
+      background-color: $accent;
+      transition: all 500ms ease-in;
+    }
+
+    // -if burger is clicked
+
+    &.open {
+      transform: rotate(180deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+  }
+
+  // -responsive
+  @include desktop() {
+    display: none;
+  }
+}
+
 #toggle {
   &:hover {
     cursor: pointer;
@@ -103,7 +167,17 @@ a {
   }
 }
 .links {
-  display: none;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+  transition-delay: 200ms;
+  visibility: hidden;
+
+  // -responsive
+
+  @include desktop() {
+    opacity: 1;
+    visibility: visible;
+  }
 
   ul {
     display: flex;
@@ -162,7 +236,8 @@ a {
 // todo to be added in javascript
 
 .show-links {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .introduction {

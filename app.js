@@ -1,12 +1,23 @@
 // todo toggle button for menu bars
 const home = document.getElementById("home").offsetTop;
 
-const toggle = document.getElementById("toggle");
+// const toggle = document.getElementById("toggle");
 
-toggle.addEventListener("click", () => {
-  const link = document.querySelector(".links");
+// toggle.addEventListener("click", () => {
+//
+//
+// });
+
+const hamburger = document.querySelector("[data-burger]");
+const menu = document.querySelector("[data-menu]");
+const link = document.querySelector(".links");
+
+function toggleMenu() {
+  hamburger.classList.toggle("open");
   link.classList.toggle("show-links");
-});
+}
+
+menu.addEventListener("click", toggleMenu);
 
 // todo fixed navbar
 
